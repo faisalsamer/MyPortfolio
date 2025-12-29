@@ -146,7 +146,7 @@ export default function Header() {
                 <div className="absolute inset-[-2px] rounded-full opacity-0 blur-sm group-hover:opacity-20 transition-all duration-300" style={{ backgroundColor: "var(--color-primary-blue)" }} />
                 <SocialIcon type="email" className="w-10 h-10" />
               </a>
-              <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer"
+              <a href="https://wa.me/601128745561" target="_blank" rel="noopener noreferrer"
                 className="relative group flex items-center p-3 rounded-lg transition-colors duration-200">
                 <div className="absolute inset-[-2px] rounded-full opacity-0 blur-sm group-hover:opacity-20 transition-all duration-300" style={{ backgroundColor: "var(--color-primary-blue)" }} />
                 <SocialIcon type="whatsapp" className="w-10 h-10" />
@@ -243,7 +243,7 @@ export default function Header() {
                   <div className="absolute inset-[-2px] rounded-full opacity-0 blur-sm group-hover:opacity-20 transition-all duration-300" style={{ backgroundColor: "var(--color-primary-blue)" }} />
                   <SocialIcon type="email" className="w-6 h-6 md:w-8 md:h-8" />
                 </a>
-                <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer"
+                <a href="https://wa.me/601128745561" target="_blank" rel="noopener noreferrer"
                   className={`relative group hidden sm:block scale-in scroll-animate ${animate ? "visible" : ""} delay-300`}>
                   <div className="absolute inset-[-2px] rounded-full opacity-0 blur-sm group-hover:opacity-20 transition-all duration-300" style={{ backgroundColor: "var(--color-primary-blue)" }} />
                   <SocialIcon type="whatsapp" className="w-6 h-6 md:w-8 md:h-8" />
