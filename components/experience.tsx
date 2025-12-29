@@ -7,24 +7,24 @@ export default function Experience() {
   return (
     <section id="experience" className="flex flex-col items-center pt-16 md:pt-20 px-4 sm:px-6 md:px-8">
       {/* Work Experience Section */}
-      <div className="w-full max-w-4xl mb-16">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-3 scroll-animate fade-up"
+      <div className="w-full max-w-5xl mb-5">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-2 scroll-animate fade-up"
           style={{ color: "var(--ui-heading-color)" }}>
           Work Experience
         </h2>
-        <p className="text-base md:text-lg mb-12 scroll-animate fade-up"
+        <p className="text-base md:text-lg mb-5 scroll-animate"
           style={{ color: "var(--ui-subheading-color)" }}>
           Experienced in software development, problem-solving, and team collaboration, with a strong focus on efficiency and knowledge sharing.
         </p>
 
         {/* Experience Items */}
-        <div className="space-y-8">
+        <div className="space-y-0">
           {workExperienceData.map((experience, index) => (
             <div key={experience.id} className="relative flex flex-col md:flex-row gap-4 md:gap-6 scroll-animate fade-up"
               style={{ animationDelay: `${index * 0.1}s` }}>
 
               {/* Left: Company Info */}
-              <div className="md:w-48 md:shrink-0">
+              <div className="md:w-58 md:shrink-0">
                 <div className="flex items-start gap-3">
                   {/* Timeline Dot */}
                   <div className="w-3 h-3 rounded-full mt-1.5 shrink-0"
@@ -97,7 +97,7 @@ export default function Experience() {
       </div>
 
       {/* Education Section */}
-      <div className="w-full max-w-4xl">
+      <div className="w-full max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-semibold mb-3 scroll-animate fade-up"
           style={{ color: "var(--ui-heading-color)" }}>
           My Education
@@ -114,7 +114,7 @@ export default function Experience() {
               style={{ animationDelay: `${index * 0.1}s` }}>
 
               {/* Left: Institution Info */}
-              <div className="md:w-48 md:shrink-0">
+              <div className="md:w-58 md:shrink-0">
                 <div className="flex items-start gap-3">
                   {/* Timeline Dot */}
                   <div className="w-3 h-3 rounded-full mt-1.5 flex-shrink-0"

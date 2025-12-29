@@ -8,6 +8,7 @@ import { SiGithub } from "react-icons/si";
 import { TbWorld, TbEye, TbLock } from "react-icons/tb";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
+import Tooltip from "./tooltip";
 
 export default function Projects() {
   const { isDarkMode } = useTheme();
@@ -48,11 +49,11 @@ export default function Projects() {
         photoClosable={true}
         maskClosable={true}
       >
-        <div className="w-full px-10 md:max-w-6xl">
+        <div className="w-full px-2 md:max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
             {projectsData.map((project, index) => (
               <div key={project.id}
-                className="flex flex-col rounded-lg border overflow-hidden transition-all duration-300 hover:scale-[1.02] scroll-animate fade-up"
+                className="relative flex flex-col rounded-lg border transition-all duration-300 hover:scale-[1.02] scroll-animate fade-up"
                 style={{
                   backgroundColor: "var(--color-card)",
                   borderColor: "var(--color-gray-200)",
@@ -104,10 +105,12 @@ export default function Projects() {
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm leading-relaxed line-clamp-2"
-                  style={{ color: "var(--ui-text-color)" }}>
-                  {project.subtitle}
-                </p>
+                <Tooltip content={project.subtitle}>
+                  <p className="text-sm leading-relaxed line-clamp-2"
+                    style={{ color: "var(--ui-text-color)" }}>
+                    {project.subtitle}
+                  </p>
+                </Tooltip>
 
                 {/* Tech Stack */}
                 {project.techStack && (

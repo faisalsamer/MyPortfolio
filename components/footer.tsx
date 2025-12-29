@@ -277,9 +277,9 @@ export default function Footer() {
   );
 
   return (
-    <footer id="contact" className="relative flex flex-col items-center justify-end lg:pt-30">
+    <footer id="contact" className="relative flex flex-col items-center justify-end lg:pt-15">
       {/* Contact Form Section */}
-      <div className="w-full max-w-7xl z-10 px-4 sm:px-6 md:px-8 pt-24 pb-8 lg:pt-0 lg:mb-0">
+      <div className="w-full max-w-7xl z-10 px-4 sm:px-6 md:px-8 pt-10 pb-8 lg:pt-0 lg:mb-0">
         {renderMobileLayout()}
         {renderDesktopLayout()}
       </div>

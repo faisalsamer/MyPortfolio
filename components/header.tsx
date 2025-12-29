@@ -65,6 +65,24 @@ export default function Header() {
     )
   );
 
+  const Logo = ({ className = "" }: { className?: string }) => (
+    <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+      <rect x="0.35" y="0.35" width="14.3" height="14.3" rx="7.15" stroke="var(--color-primary-blue)" strokeWidth="0.7"/>
+      <mask id="mask0_logo" style={{ maskType: "alpha" }} maskUnits="userSpaceOnUse" x="1" y="-6" width="22" height="29">
+        <rect x="22.8027" y="-1.20398" width="28" height="6.90121" transform="rotate(124 22.8027 -1.20398)" fill="#D9D9D9"/>
+      </mask>
+      <g mask="url(#mask0_logo)">
+        <path d="M9.042 12.138C8.674 12.138 8.336 12.108 8.028 12.048C7.724 11.988 7.452 11.914 7.212 11.826C6.972 11.738 6.772 11.65 6.612 11.562L6.51 10.572C6.818 10.756 7.18 10.918 7.596 11.058C8.016 11.194 8.472 11.262 8.964 11.262C9.556 11.262 9.994 11.158 10.278 10.95C10.562 10.738 10.704 10.422 10.704 10.002V9.906C10.704 9.63 10.648 9.404 10.536 9.228C10.424 9.052 10.234 8.904 9.966 8.784C9.702 8.664 9.342 8.552 8.886 8.448C8.31 8.312 7.848 8.152 7.5 7.968C7.156 7.78 6.906 7.546 6.75 7.266C6.598 6.986 6.522 6.638 6.522 6.222V6.168C6.522 5.54 6.728 5.056 7.14 4.716C7.552 4.372 8.176 4.2 9.012 4.2C9.56 4.2 10.026 4.256 10.41 4.368C10.798 4.48 11.114 4.604 11.358 4.74L11.448 5.652C11.164 5.484 10.832 5.342 10.452 5.226C10.076 5.106 9.644 5.046 9.156 5.046C8.768 5.046 8.454 5.092 8.214 5.184C7.974 5.276 7.8 5.408 7.692 5.58C7.584 5.752 7.53 5.96 7.53 6.204V6.228C7.53 6.476 7.582 6.688 7.686 6.864C7.794 7.04 7.98 7.192 8.244 7.32C8.512 7.448 8.892 7.572 9.384 7.692C9.948 7.824 10.4 7.976 10.74 8.148C11.08 8.32 11.326 8.544 11.478 8.82C11.634 9.096 11.712 9.456 11.712 9.9V10.026C11.712 10.718 11.488 11.244 11.04 11.604C10.596 11.96 9.93 12.138 9.042 12.138Z" fill="var(--color-primary-blue)"/>
+      </g>
+      <mask id="mask1_logo" style={{ maskType: "alpha" }} maskUnits="userSpaceOnUse" x="-3" y="-4" width="16" height="20">
+        <rect x="12.9141" y="0.220947" width="18" height="5.84922" transform="rotate(124 12.9141 0.220947)" fill="#D9D9D9"/>
+      </mask>
+      <g mask="url(#mask1_logo)">
+        <path d="M9.73535 8.96863H7.4209V12.2323C7.4209 12.5331 7.34082 12.7518 7.18066 12.8885C7.02441 13.0253 6.78418 13.0936 6.45996 13.0936C6.13184 13.0936 5.88965 13.0253 5.7334 12.8885C5.57715 12.7518 5.49902 12.5331 5.49902 12.2323V8.96863H4.58496V8.453H5.49902V4.76746C5.37402 4.77917 5.22949 4.80261 5.06543 4.83777C4.90527 4.86902 4.73926 4.91589 4.56738 4.97839C4.39941 5.03699 4.2334 5.1073 4.06934 5.18933C3.90527 5.27136 3.75879 5.36707 3.62988 5.47644C3.50098 5.58582 3.39551 5.70886 3.31348 5.84558C3.23535 5.97839 3.19629 6.12292 3.19629 6.27917C3.19629 6.40417 3.21191 6.50378 3.24316 6.578C3.27832 6.65222 3.31738 6.70886 3.36035 6.74792C3.40332 6.78308 3.44629 6.80652 3.48926 6.81824C3.53613 6.82605 3.56934 6.82996 3.58887 6.82996C3.68652 6.82996 3.7666 6.81433 3.8291 6.78308C3.8916 6.74792 3.94824 6.71277 3.99902 6.67761C4.0498 6.63855 4.09668 6.60339 4.13965 6.57214C4.18652 6.53699 4.23926 6.51941 4.29785 6.51941C4.34473 6.51941 4.39355 6.53113 4.44434 6.55457C4.49902 6.5741 4.54785 6.6073 4.59082 6.65417C4.6377 6.70105 4.67676 6.76355 4.70801 6.84167C4.73926 6.91589 4.75488 7.00769 4.75488 7.11707C4.75488 7.27332 4.72363 7.41003 4.66113 7.52722C4.60254 7.6405 4.52441 7.73425 4.42676 7.80847C4.33301 7.88269 4.22363 7.93933 4.09863 7.97839C3.97754 8.01355 3.85645 8.03113 3.73535 8.03113C3.54785 8.03113 3.37793 7.99988 3.22559 7.93738C3.07715 7.87097 2.9502 7.78113 2.84473 7.66785C2.73926 7.55457 2.65918 7.42371 2.60449 7.27527C2.5498 7.12292 2.52246 6.95886 2.52246 6.78308C2.52246 6.32605 2.64746 5.93738 2.89746 5.61707C3.15137 5.29675 3.49707 5.03503 3.93457 4.83191C4.37207 4.62488 4.88184 4.47449 5.46387 4.38074C6.0459 4.28699 6.66895 4.24011 7.33301 4.24011C7.60254 4.24011 7.88379 4.24402 8.17676 4.25183C8.46973 4.25574 8.74512 4.26355 9.00293 4.27527C9.26465 4.28699 9.49512 4.30066 9.69434 4.31628C9.89355 4.33191 10.0342 4.34949 10.1162 4.36902C10.1943 4.38855 10.2568 4.41003 10.3037 4.43347C10.3506 4.45691 10.3857 4.48425 10.4092 4.5155C10.4326 4.54675 10.4482 4.58386 10.4561 4.62683C10.4639 4.66589 10.4678 4.71277 10.4678 4.76746C10.4678 4.81433 10.4619 4.86707 10.4502 4.92566C10.4385 4.98035 10.4209 5.03308 10.3975 5.08386C10.374 5.13074 10.3447 5.17175 10.3096 5.20691C10.2744 5.24207 10.2314 5.25964 10.1807 5.25964C10.1494 5.25964 10.1143 5.24597 10.0752 5.21863C10.04 5.19128 9.9873 5.15613 9.91699 5.11316C9.85059 5.07019 9.75879 5.02527 9.6416 4.97839C9.52832 4.93152 9.37402 4.8866 9.17871 4.84363C8.9873 4.80066 8.74707 4.7655 8.45801 4.73816C8.17285 4.71082 7.82715 4.69714 7.4209 4.69714V8.453H9.73535V8.96863Z" fill="var(--color-primary-blue)"/>
+      </g>
+    </svg>
+  );
+
   const SocialIcon = ({ type, className = "" }: { type: "linkedin" | "email" | "whatsapp" | "github"; className?: string }) => {
     const paths = {
       linkedin: "M25 22.5V16C25 13.5 23.5 11 20.5 11C19 11 17.5 11.8 16.8 13H16.7V11.3H13V22.5H16.8V16.7C16.8 15.1 17.2 13.6 19.1 13.6C21 13.6 21.2 15.4 21.2 16.8V22.5H25ZM8 22.5H11.8V11.3H8V22.5ZM9.9 7C8.8 7 8 7.8 8 8.9C8 10 8.8 10.8 9.9 10.8C11 10.8 11.8 10 11.8 8.9C11.8 7.8 11 7 9.9 7Z",
@@ -141,7 +159,7 @@ export default function Header() {
       {/* Floating Header (Desktop) */}
       <header className={`fixed left-1/2 -translate-x-1/2 z-[51] bg-[var(--color-card)]/80 backdrop-blur-sm transition-all duration-300 hidden sm:flex items-center justify-between gap-2 sm:gap-10 max-w-[1000px] p-2 px-4 rounded-full shadow-xl border border-gray-200/50 hover:bg-[var(--color-card)] hover:scale-[1.01] ${isHeaderFixed ? "top-6 opacity-100 scale-100" : "top-4 opacity-0 scale-90"}`}>
         <Link href="/" className={`transform scale-[0.85] sm:scale-90 relative inline-block focus:outline-none cursor-pointer fade scroll-animate delay-100 transition-all duration-700 ease-in-out ${animate ? "visible" : ""}`}>
-          <span className="text-[var(--color-primary-blue)] font-bold text-xl">FS</span>
+          <Logo className="w-6 h-6" />
         </Link>
         <div className={`flex items-center fade scroll-animate delay-100 transition-all duration-700 ease-in-out ${animate ? "visible" : ""} gap-2 sm:gap-4 text-sm`}>
           {navItems.map((item) => (
@@ -160,7 +178,7 @@ export default function Header() {
       <header className={`${isHeaderVisible ? "translate-y-0 duration-700" : "-translate-y-full"} sm:hidden fixed top-0 flex items-center justify-center w-full z-50 transition-all duration-300 ease-in-out bg-[var(--color-card)]/80 backdrop-blur-sm py-4`}>
         <div className="flex items-center justify-between transition-all duration-700 ease-in-out w-full mx-4 max-w-7xl">
           <Link href="/" className={`relative inline-block focus:outline-none cursor-pointer fade scroll-animate delay-100 transition-all duration-200 ease-in-out ${animate ? "visible" : ""}`}>
-            <span className="text-(--color-primary-blue) font-bold text-xl">FS</span>
+            <Logo className="w-6 h-6" />
           </Link>
           <button onClick={() => setIsSidebarOpen(!isSidebarOpen)} className="p-2 rounded-md hover:bg-transparent transition-all duration-700 relative w-10 h-10 flex items-center justify-center">
             <div className="relative w-6 h-6">
@@ -176,7 +194,7 @@ export default function Header() {
       <header className={`relative flex items-center justify-center w-full z-[51] transition-all duration-300 ease-in-out py-4 md:py-7 ${isHeaderFixed ? "opacity-0" : "delay-300 opacity-100"}`}>
         <div className={`flex items-center justify-between transition-all duration-700 ease-in-out ${isHeaderFixed ? "w-full gap-4" : "delay-100 w-full mx-4 md:mx-10 max-w-7xl"}`}>
           <Link href="/" className={`relative inline-block focus:outline-none cursor-pointer fade scroll-animate delay-100 transition-all duration-200 ease-in-out ${animate ? "visible" : ""} ${isHeaderFixed ? "transform scale-90" : "delay-100 transform scale-100"}`}>
-            <span className={`text-[var(--color-primary-blue)] font-bold transition-all duration-200 ${isHeaderFixed ? "text-xl" : "delay-100 text-2xl"}`}>FS</span>
+            <Logo className={`transition-all duration-200 ${isHeaderFixed ? "w-6 h-6" : "delay-100 w-8 h-8"}`} />
           </Link>
 
           <div className="flex items-center gap-5">

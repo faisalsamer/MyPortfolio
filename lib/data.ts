@@ -85,7 +85,7 @@ export const projectsData = [
     status: "In Development",
     users: "Frontend demo ready",
     websiteUrl: null,
-    techStack: ["React", "TypeScript", "Tailwind CSS", "TanStack Query", "TanStack Router", "shadcn/ui", "PostgreSQL", "Supabase"],
+    techStack: ["React.js", "TypeScript", "Tailwind CSS", "TanStack Query", "TanStack Router", "shadcn/ui", "PostgreSQL", "Supabase"],
     lightImages: [
       "/projectImages/posview.png",
     ],
@@ -109,7 +109,7 @@ export const projectsData = [
     status: "Completed",
     users: null,
     websiteUrl: null,
-    techStack: ["React", "Firebase", "Firestore"],
+    techStack: ["React.js", "Firebase", "Firestore"],
     lightImages: [
       "/projectImages/LumeaAILight.png",
       "/projectImages/LumeaAILightTablet.png",
@@ -141,7 +141,7 @@ export const projectsData = [
     users: null,
     websiteUrl: null,
     githubUrl: "https://github.com/placeholder",
-    techStack: ["React", "Node.js", "MySQL", "MariaDB"],
+    techStack: ["React.js", "Node.js", "MySQL", "MariaDB"],
     lightImages: [
       "/projectImages/LAndFSystemLight.png",
       "/projectImages/LAndFSystemLightTablet.png",
@@ -172,7 +172,7 @@ export const projectsData = [
     status: "Completed",
     users: null,
     websiteUrl: null,
-    techStack: ["React", "Firebase", "Firestore"],
+    techStack: ["React.js", "Firebase", "Firestore"],
     lightImages: [
       "/projectImages/SuperAdminLight.png",
       "/projectImages/SuperAdminLightTablet.png",
@@ -204,9 +204,10 @@ export const workExperienceData = [
     website: "https://leafloat.tech",
     description: [
       "Building a full-featured restaurant POS with React 19, TypeScript, and TanStack Router/Query/Store, handling order flows, menu management with combo builders, add-ons, discounts, and a kanban-style kitchen display. In addition to the management of staff and subscribers.",
-      "Architected frontend structure and planned database schema, enabling seamless backend integration and preparing the codebase for team collaboration.",
+      "Architected the project from initial planning through system design, frontend structure, and database schema.",
+      "Currently under development; frontend mostly complete, backend integration in progress after finalizing the database schema."
     ],
-    techStack: ["React", "TypeScript", "TanStack Router", "TanStack Query", "TanStack Store", "Tailwind CSS", "shadcn/ui"],
+    techStack: ["React.js", "TypeScript", "TanStack Router", "TanStack Query", "TanStack Store", "Tailwind CSS", "shadcn/ui", "Figma"],
   },
   {
     id: 1,
@@ -216,9 +217,9 @@ export const workExperienceData = [
     location: "Melaka, Malaysia",
     website: null,
     description: [
-      "Designed and developed a full-stack property management SaaS from scratch using Next.js, TypeScript, Supabase, PostgreSQL, and Prisma, handling database architecture, authentication, and UI/UX design independently.",
-      "Built tenant and staff portals with role-based access control, lease management, automated rental payment generation, and a notification system using pg_cron scheduling.",
-      "Integrated Billplz payment gateway enabling 200+ tenants to pay rent online, currently live and actively used by a property management company with ongoing feature development.",
+      "Built the whole project from scratch, handling the system design, backend, database, and frontend.",
+      "Built tenant and staff portals with role-based access control, lease management, automated rental payment generation, recurring payment generation, notification system using pg_cron scheduling and others.",
+      "Integrated Billplz payment gateway enabling 200+ tenants to pay rent and other payments online, currently live and actively used by a property management company with ongoing feature development.",
     ],
     techStack: ["Next.js", "TypeScript", "Supabase", "Prisma", "Tailwind CSS", "shadcn/ui", "Figma"],
   },
@@ -230,11 +231,11 @@ export const workExperienceData = [
     location: "Kuala Lumpur, Malaysia",
     website: "https://datalytic.ai/",
     description: [
-      "Redesigned and optimized an AI productivity monitoring web app using React.js and Firebase, improving performance and reducing costs by 50% through optimized resource usage.",
-      "Built internal admin portals for managing organizations, subscriptions, and analytics, integrating Firebase and Power BI dashboards.",
-      "Designed responsive UI/UX interfaces across multiple products using Figma, improving usability and platform consistency.",
+      "Redesigned and optimized an AI productivity monitoring web app using React.js and Firebase, improving performance and reducing costs by +50% through optimized resource usage.",
+      "Built internal admin portal for managing organizations, and subscriptions.",
+      "Designed UI/UX interfaces across multiple products using Figma, improving usability and platform consistency.",
     ],
-    techStack: ["React", "Firebase", "Power BI", "Figma"],
+    techStack: ["React.js", "Firebase", "Power BI", "Figma"],
   },
 ];
 
@@ -247,7 +248,8 @@ export const educationData = [
     location: "Melaka, Malaysia",
     cgpa: "3.41/4.00",
     highlights: [
-      "Final Year Project: uFound - Campus Lost and Found Management System",
+      "Final Year Project: uFound - Campus Lost and Found Management System.",
+      "Workshop 2 Project: Veterinary Management System."
     ],
   },
 ];
