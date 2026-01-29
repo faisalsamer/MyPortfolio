@@ -41,7 +41,7 @@ export default function Hero () {
         >
           {/* Glow effect */}
           <div
-            className='absolute inset-[-25px] rounded-full opacity-[0.08] blur-[50px]'
+            className='absolute -inset-6.25 rounded-full opacity-[0.08] blur-[50px]'
             style={{
               background:
                 'linear-gradient(to right, var(--color-primary-purple), var(--color-primary-blue), #6366f1)'
@@ -50,7 +50,7 @@ export default function Hero () {
 
           {/* Spinning border */}
           <div
-            className='absolute inset-[-8px] rounded-full border-2 border-dashed z-[-1] animate-spin-slow'
+            className='absolute -inset-2 rounded-full border-2 border-dashed z-[-1] animate-spin-slow'
             style={{ borderColor: 'var(--color-primary-purple)' }}
           />
 

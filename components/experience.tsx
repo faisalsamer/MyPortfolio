@@ -68,7 +68,7 @@ export default function Experience() {
                   {experience.description.map((item, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm"
                       style={{ color: "var(--ui-text-color)" }}>
-                      <span className="mt-1.5 w-1 h-1 rounded-full flex-shrink-0"
+                      <span className="mt-1.5 w-1 h-1 rounded-full shrink-0"
                         style={{ backgroundColor: "var(--ui-text-color)" }} />
                       <span>{item}</span>
                     </li>
@@ -117,7 +117,7 @@ export default function Experience() {
               <div className="md:w-58 md:shrink-0">
                 <div className="flex items-start gap-3">
                   {/* Timeline Dot */}
-                  <div className="w-3 h-3 rounded-full mt-1.5 flex-shrink-0"
+                  <div className="w-3 h-3 rounded-full mt-1.5 shrink-0"
                     style={{ backgroundColor: "var(--color-blue-primary)" }} />
 
                   <div className="flex flex-col">
@@ -150,7 +150,7 @@ export default function Experience() {
                   {education.highlights.map((item, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm"
                       style={{ color: "var(--ui-text-color)" }}>
-                      <span className="mt-1.5 w-1 h-1 rounded-full flex-shrink-0"
+                      <span className="mt-1.5 w-1 h-1 rounded-full shrink-0"
                         style={{ backgroundColor: "var(--ui-text-color)" }} />
                       <span>{item}</span>
                     </li>

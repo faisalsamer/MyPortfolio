@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useTheme } from "@/context/theme-context";
 import { projectsData } from "@/lib/data";
 import { SiGithub } from "react-icons/si";
-import { TbWorld, TbEye, TbLock } from "react-icons/tb";
+import { TbWorld, TbEye, TbLock, TbChevronRight } from "react-icons/tb";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import Tooltip from "./tooltip";
@@ -178,6 +178,14 @@ export default function Projects() {
                       </button>
                     </PhotoView>
                   )}
+
+                  {/* Details Link */}
+                  <Link href={`/project/${project.id}`}
+                    className="inline-flex items-center gap-1 text-xs font-medium transition-opacity duration-200 hover:opacity-80 ml-auto"
+                    style={{ color: "var(--color-primary-purple)" }}>
+                    Details
+                    <TbChevronRight size={14} />
+                  </Link>
                 </div>
               </div>
             </div>

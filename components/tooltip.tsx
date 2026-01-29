@@ -130,7 +130,7 @@ export default function Tooltip({ content, children, className = '' }: TooltipPr
       {mounted && isVisible && createPortal(
         <div
           ref={tooltipRef}
-          className={`fixed z-[9999] px-3 py-2 text-sm rounded-lg shadow-lg max-w-xs sm:max-w-sm md:max-w-md transition-opacity duration-200 border ${
+          className={`fixed z-9999 px-3 py-2 text-sm rounded-lg shadow-lg max-w-xs sm:max-w-sm md:max-w-md transition-opacity duration-200 border ${
             position === 'top' ? '-translate-y-full' : ''
           }`}
           style={{
@@ -145,7 +145,7 @@ export default function Tooltip({ content, children, className = '' }: TooltipPr
             boxShadow: 'var(--ui-shadow-modern)',
           }}
         >
-          <p className="text-sm leading-relaxed whitespace-normal break-words">
+          <p className="text-sm leading-relaxed whitespace-normal wrap-break-words">
             {content}
           </p>
 

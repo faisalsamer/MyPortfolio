@@ -94,7 +94,7 @@ export default function Header() {
     return (
       <svg viewBox="0 0 32 32" className={`relative group transition-all duration-300 hover:scale-105 z-10 ${className}`} style={{ borderRadius: "50%" }}>
         <path d="M32 0H0V32H32V0Z" className="fill-transparent group-hover:fill-(--color-primary-blue) transition-colors duration-300" fillRule="evenodd" />
-        <path d="M16,31 C24.2842712,31 31,24.2842712 31,16 C31,7.71572875 24.2842712,1 16,1 C7.71572875,1 1,7.71572875 1,16 C1,24.2842712 7.71572875,31 16,31 Z M16,32 C7.163444,32 0,24.836556 0,16 C0,7.163444 7.163444,0 16,0 C24.836556,0 32,7.163444 32,16 C32,24.836556 24.836556,32 16,32 Z" className="fill-[var(--color-primary-blue)] group-hover:fill-transparent transition-colors duration-300" />
+        <path d="M16,31 C24.2842712,31 31,24.2842712 31,16 C31,7.71572875 24.2842712,1 16,1 C7.71572875,1 1,7.71572875 1,16 C1,24.2842712 7.71572875,31 16,31 Z M16,32 C7.163444,32 0,24.836556 0,16 C0,7.163444 7.163444,0 16,0 C24.836556,0 32,7.163444 32,16 C32,24.836556 24.836556,32 16,32 Z" className="fill-(--color-primary-blue) group-hover:fill-transparent transition-colors duration-300" />
         <path d={paths[type]} className="fill-(--color-primary-blue) group-hover:fill-white transition-colors duration-300" />
       </svg>
     );
@@ -119,7 +119,7 @@ export default function Header() {
             <button onClick={toggleTheme}
               className="relative w-26 h-12 rounded-full mt-4 overflow-hidden transition-all duration-300 hover:shadow-[0_0_6px_rgba(60,101,255,0.15)]"
               style={{ background: "rgba(60, 101, 255, 0.1)" }}>
-              <div className={`absolute top-1 w-10 h-10 rounded-full transition-transform duration-500 ease-in-out flex items-center justify-center ${isDarkMode ? "translate-x-[58px]" : "translate-x-1"}`}
+              <div className={`absolute top-1 w-10 h-10 rounded-full transition-transform duration-500 ease-in-out flex items-center justify-center ${isDarkMode ? "translate-x-14.5" : "translate-x-1"}`}
                 style={{ backgroundColor: "var(--color-card)", boxShadow: "var(--ui-shadow-card)" }}>
                 <ModeIcon size={20} />
               </div>
@@ -134,21 +134,21 @@ export default function Header() {
             <div className="flex items-center gap-0">
               <a href="https://www.linkedin.com/in/faisal-al-madhehagi/" target="_blank" rel="noopener noreferrer"
                 className="relative group flex items-center p-3 rounded-lg transition-colors duration-200">
-                <div className="absolute inset-[-2px] rounded-full opacity-0 blur-sm group-hover:opacity-20 transition-all duration-300" style={{ backgroundColor: "var(--color-primary-blue)" }} />
+                <div className="absolute -inset-0.5 rounded-full opacity-0 blur-sm group-hover:opacity-20 transition-all duration-300" style={{ backgroundColor: "var(--color-primary-blue)" }} />
                 <SocialIcon type="linkedin" className="w-10 h-10" />
               </a>
               <a href="https://github.com/faisalsamer" target="_blank" rel="noopener noreferrer"
                 className="relative group flex items-center p-3 rounded-lg transition-colors duration-200">
-                <div className="absolute inset-[-2px] rounded-full opacity-0 blur-sm group-hover:opacity-20 transition-all duration-300" style={{ backgroundColor: "var(--color-primary-blue)" }} />
+                <div className="absolute -inset-0.5 rounded-full opacity-0 blur-sm group-hover:opacity-20 transition-all duration-300" style={{ backgroundColor: "var(--color-primary-blue)" }} />
                 <SocialIcon type="github" className="w-10 h-10" />
               </a>
               <a href="mailto:faisalsameer55@gmail.com" className="relative group flex items-center p-3 rounded-lg transition-colors duration-200">
-                <div className="absolute inset-[-2px] rounded-full opacity-0 blur-sm group-hover:opacity-20 transition-all duration-300" style={{ backgroundColor: "var(--color-primary-blue)" }} />
+                <div className="absolute -inset-0.5 rounded-full opacity-0 blur-sm group-hover:opacity-20 transition-all duration-300" style={{ backgroundColor: "var(--color-primary-blue)" }} />
                 <SocialIcon type="email" className="w-10 h-10" />
               </a>
               <a href="https://wa.me/601128745561" target="_blank" rel="noopener noreferrer"
                 className="relative group flex items-center p-3 rounded-lg transition-colors duration-200">
-                <div className="absolute inset-[-2px] rounded-full opacity-0 blur-sm group-hover:opacity-20 transition-all duration-300" style={{ backgroundColor: "var(--color-primary-blue)" }} />
+                <div className="absolute -inset-0.5 rounded-full opacity-0 blur-sm group-hover:opacity-20 transition-all duration-300" style={{ backgroundColor: "var(--color-primary-blue)" }} />
                 <SocialIcon type="whatsapp" className="w-10 h-10" />
               </a>
             </div>
@@ -157,7 +157,7 @@ export default function Header() {
       </div>
 
       {/* Floating Header (Desktop) */}
-      <header className={`fixed left-1/2 -translate-x-1/2 z-[51] bg-[var(--color-card)]/80 backdrop-blur-sm transition-all duration-300 hidden sm:flex items-center justify-between gap-2 sm:gap-10 max-w-[1000px] p-2 px-4 rounded-full shadow-xl border border-gray-200/50 hover:bg-[var(--color-card)] hover:scale-[1.01] ${isHeaderFixed ? "top-6 opacity-100 scale-100" : "top-4 opacity-0 scale-90"}`}>
+      <header className={`fixed left-1/2 -translate-x-1/2 z-51 bg-(--color-card)/80 backdrop-blur-sm transition-all duration-300 hidden sm:flex items-center justify-between gap-2 sm:gap-10 max-w-250 p-2 px-4 rounded-full shadow-xl border border-gray-200/50 hover:bg-(--color-card) hover:scale-[1.01] ${isHeaderFixed ? "top-6 opacity-100 scale-100" : "top-4 opacity-0 scale-90"}`}>
         <Link href="/" className={`transform scale-[0.85] sm:scale-90 relative inline-block focus:outline-none cursor-pointer fade scroll-animate delay-100 transition-all duration-700 ease-in-out ${animate ? "visible" : ""}`}>
           <Logo className="w-6 h-6" />
         </Link>
@@ -175,7 +175,7 @@ export default function Header() {
       </header>
 
       {/* Mobile Fixed Header (appears on scroll up) */}
-      <header className={`${isHeaderVisible ? "translate-y-0 duration-700" : "-translate-y-full"} sm:hidden fixed top-0 flex items-center justify-center w-full z-50 transition-all duration-300 ease-in-out bg-[var(--color-card)]/80 backdrop-blur-sm py-4`}>
+      <header className={`${isHeaderVisible ? "translate-y-0 duration-700" : "-translate-y-full"} sm:hidden fixed top-0 flex items-center justify-center w-full z-50 transition-all duration-300 ease-in-out bg-(--color-card)/80 backdrop-blur-sm py-4`}>
         <div className="flex items-center justify-between transition-all duration-700 ease-in-out w-full mx-4 max-w-7xl">
           <Link href="/" className={`relative inline-block focus:outline-none cursor-pointer fade scroll-animate delay-100 transition-all duration-200 ease-in-out ${animate ? "visible" : ""}`}>
             <Logo className="w-6 h-6" />
@@ -191,7 +191,7 @@ export default function Header() {
       </header>
 
       {/* Main Header */}
-      <header className={`relative flex items-center justify-center w-full z-[51] transition-all duration-300 ease-in-out py-4 md:py-7 ${isHeaderFixed ? "opacity-0" : "delay-300 opacity-100"}`}>
+      <header className={`relative flex items-center justify-center w-full z-51 transition-all duration-300 ease-in-out py-4 md:py-7 ${isHeaderFixed ? "opacity-0" : "delay-300 opacity-100"}`}>
         <div className={`flex items-center justify-between transition-all duration-700 ease-in-out ${isHeaderFixed ? "w-full gap-4" : "delay-100 w-full mx-4 md:mx-10 max-w-7xl"}`}>
           <Link href="/" className={`relative inline-block focus:outline-none cursor-pointer fade scroll-animate delay-100 transition-all duration-200 ease-in-out ${animate ? "visible" : ""} ${isHeaderFixed ? "transform scale-90" : "delay-100 transform scale-100"}`}>
             <Logo className={`transition-all duration-200 ${isHeaderFixed ? "w-6 h-6" : "delay-100 w-8 h-8"}`} />
@@ -212,7 +212,7 @@ export default function Header() {
             <div className={`flex justify-center items-center gap-3 transition-all duration-700 ease-in-out ${isHeaderFixed ? "opacity-0 scale-0 w-0 overflow-hidden translate-x-4" : "delay-100 opacity-100 scale-100 translate-x-0"}`}>
               <div className={`scale-in scroll-animate ${animate ? "visible delay-100" : ""}`}>
                 <button onClick={toggleTheme}
-                  className="hidden sm:block relative w-[60px] h-7 md:w-20 md:h-10 rounded-full overflow-hidden transition-all duration-300 hover:shadow-[0_0_6px_rgba(60,101,255,0.15)]"
+                  className="hidden sm:block relative w-15 h-7 md:w-20 md:h-10 rounded-full overflow-hidden transition-all duration-300 hover:shadow-[0_0_6px_rgba(60,101,255,0.15)]"
                   style={{ background: "rgba(60, 101, 255, 0.1)" }}>
                   <div className={`absolute top-1 w-5 h-5 md:w-8 md:h-8 rounded-full transition-transform duration-500 ease-in-out flex items-center justify-center ${isDarkMode ? "translate-x-9 md:translate-x-11" : "translate-x-1"}`}
                     style={{ backgroundColor: "var(--color-card)", boxShadow: "var(--ui-shadow-card)" }}>
@@ -220,8 +220,8 @@ export default function Header() {
                   </div>
                   <div className="absolute inset-0 flex items-center justify-between px-0.5 md:px-2 text-[10px] font-bold transition-all duration-500 pointer-events-none"
                     style={{ color: "var(--color-text-primary)" }}>
-                    <span className={`ml-[5px] md:ml-[2px] transition-opacity duration-500 ${isDarkMode ? "opacity-100" : "opacity-0"}`}>Night</span>
-                    <span className={`mr-[5px] md:mr-[3px] transition-opacity duration-500 ${isDarkMode ? "opacity-0" : "opacity-100"}`}>DAY</span>
+                    <span className={`ml-1.25 md:ml-0.5 transition-opacity duration-500 ${isDarkMode ? "opacity-100" : "opacity-0"}`}>Night</span>
+                    <span className={`mr-1.25 md:mr-0.75 transition-opacity duration-500 ${isDarkMode ? "opacity-0" : "opacity-100"}`}>DAY</span>
                   </div>
                 </button>
               </div>
@@ -230,22 +230,22 @@ export default function Header() {
               <div className="flex gap-1">
                 <a href="https://www.linkedin.com/in/faisal-al-madhehagi/" target="_blank" rel="noopener noreferrer"
                   className={`relative group hidden sm:block scale-in scroll-animate ${animate ? "visible" : ""}`}>
-                  <div className="absolute inset-[-2px] rounded-full opacity-0 blur-sm group-hover:opacity-20 transition-all duration-300" style={{ backgroundColor: "var(--color-primary-blue)" }} />
+                  <div className="absolute -inset-0.5 rounded-full opacity-0 blur-sm group-hover:opacity-20 transition-all duration-300" style={{ backgroundColor: "var(--color-primary-blue)" }} />
                   <SocialIcon type="linkedin" className="w-6 h-6 md:w-8 md:h-8" />
                 </a>
                 <a href="https://github.com/faisalsamer" target="_blank" rel="noopener noreferrer"
                   className={`relative group hidden sm:block scale-in scroll-animate ${animate ? "visible" : ""} delay-100`}>
-                  <div className="absolute inset-[-2px] rounded-full opacity-0 blur-sm group-hover:opacity-20 transition-all duration-300" style={{ backgroundColor: "var(--color-primary-blue)" }} />
+                  <div className="absolute -inset-0.5 rounded-full opacity-0 blur-sm group-hover:opacity-20 transition-all duration-300" style={{ backgroundColor: "var(--color-primary-blue)" }} />
                   <SocialIcon type="github" className="w-6 h-6 md:w-8 md:h-8" />
                 </a>
                 <a href="mailto:faisalsameer55@gmail.com"
                   className={`relative group hidden sm:block scale-in scroll-animate ${animate ? "visible" : ""} delay-200`}>
-                  <div className="absolute inset-[-2px] rounded-full opacity-0 blur-sm group-hover:opacity-20 transition-all duration-300" style={{ backgroundColor: "var(--color-primary-blue)" }} />
+                  <div className="absolute -inset-0.5 rounded-full opacity-0 blur-sm group-hover:opacity-20 transition-all duration-300" style={{ backgroundColor: "var(--color-primary-blue)" }} />
                   <SocialIcon type="email" className="w-6 h-6 md:w-8 md:h-8" />
                 </a>
                 <a href="https://wa.me/601128745561" target="_blank" rel="noopener noreferrer"
                   className={`relative group hidden sm:block scale-in scroll-animate ${animate ? "visible" : ""} delay-300`}>
-                  <div className="absolute inset-[-2px] rounded-full opacity-0 blur-sm group-hover:opacity-20 transition-all duration-300" style={{ backgroundColor: "var(--color-primary-blue)" }} />
+                  <div className="absolute -inset-0.5 rounded-full opacity-0 blur-sm group-hover:opacity-20 transition-all duration-300" style={{ backgroundColor: "var(--color-primary-blue)" }} />
                   <SocialIcon type="whatsapp" className="w-6 h-6 md:w-8 md:h-8" />
                 </a>
               </div>
